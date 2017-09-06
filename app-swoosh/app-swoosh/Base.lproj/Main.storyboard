@@ -121,6 +121,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="bOL-cj-cQX" eventType="touchUpInside" id="BId-7S-Xi2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqF-aY-piK" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="81" width="374" height="61"/>
@@ -132,6 +135,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="bOL-cj-cQX" eventType="touchUpInside" id="xjQ-dV-oyW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83A-ML-gzT" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="162" width="374" height="61"/>
@@ -143,10 +149,13 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="bOL-cj-cQX" eventType="touchUpInside" id="NE3-Rs-uhC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLI-F3-sLI" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLI-F3-sLI" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="655" width="374" height="61"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.40076519690000001" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -214,6 +223,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="piX-dl-p8n"/>
                     </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="vLI-F3-sLI" id="P7s-qv-6l4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7b-gg-yRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Kxb-CW-Bk4" userLabel="Exit" sceneMemberID="exit"/>
